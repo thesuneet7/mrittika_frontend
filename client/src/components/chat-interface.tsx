@@ -4,8 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Bot, User, Send } from "lucide-react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
-import type { ChatMessage } from "@shared/schema";
+import { apiClient } from "@/lib/apiClient";
+import type { ChatMessage } from "@/types/chat";
 
 export default function ChatInterface() {
   const [message, setMessage] = useState("");
@@ -16,33 +16,25 @@ export default function ChatInterface() {
 
   // Fetch chat history
   const { data: messages = [] } = useQuery<ChatMessage[]>({
-    queryKey: ['/api/chat', sessionId],
-    queryFn: async () => {
-      const response = await fetch(`/api/chat/${sessionId}`);
-      if (!response.ok) throw new Error('Failed to fetch messages');
-      return response.json();
-    },
+    queryKey: ['chat', sessionId],
+    queryFn: () => apiClient.getChatHistory(sessionId),
     refetchInterval: 2000, // Poll for new messages
   });
 
   // Send message mutation
   const sendMessageMutation = useMutation({
     mutationFn: async (messageText: string) => {
-      return await apiRequest('POST', '/api/chat', {
-        sessionId,
-        message: messageText,
-        isUser: true,
-      });
+      return await apiClient.sendMessage(sessionId, messageText);
     },
     onSuccess: () => {
       setMessage("");
       setIsTyping(true);
-      queryClient.invalidateQueries({ queryKey: ['/api/chat', sessionId] });
+      queryClient.invalidateQueries({ queryKey: ['chat', sessionId] });
       
       // Stop typing indicator after 3 seconds
       setTimeout(() => {
         setIsTyping(false);
-        queryClient.invalidateQueries({ queryKey: ['/api/chat', sessionId] });
+        queryClient.invalidateQueries({ queryKey: ['chat', sessionId] });
       }, 3000);
     },
   });
@@ -117,7 +109,7 @@ export default function ChatInterface() {
               <span className={`text-xs mt-1 block ${
                 msg.isUser ? 'text-primary-foreground/70' : 'text-muted-foreground'
               }`}>
-                {new Date(msg.timestamp).toLocaleTimeString('en-US', {
+                {new Date(msg.createdAt).toLocaleTimeString('en-US', {
                   hour: 'numeric',
                   minute: '2-digit',
                 })}
