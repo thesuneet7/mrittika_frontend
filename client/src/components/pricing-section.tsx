@@ -17,7 +17,7 @@ const plans = [
   },
   {
     name: "Standard",
-    price: "₹299",
+    price: "₹19",
     period: "month",
     popular: true,
     features: [
@@ -31,7 +31,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "₹599",
+    price: "₹49",
     period: "month",
     popular: false,
     features: [

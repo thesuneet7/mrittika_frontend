@@ -16,7 +16,7 @@ export default function HeroSection() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              AI Assistant for <span className="text-primary">Indian Farmers</span>
+              Revolutionizing <span className="text-primary">Agriculture</span> with AI
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Get instant, hyperlocal agricultural advice in your language. Trained specifically for Indian farming conditions and practices.
