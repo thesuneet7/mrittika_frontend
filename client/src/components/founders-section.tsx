@@ -18,7 +18,7 @@ const founders = [
     name: "Vasudharaje Srivastava",
     title: "Co-founder",
     description: "Senior Undergrad, IIT Kanpur. American Express Intern. Econometrics & Public Policy Researcher",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
+    avatar: "/founders/vasudha.webp"
   },
   {
     name: "Aditya Mishra",
