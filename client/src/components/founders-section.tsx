@@ -6,7 +6,7 @@ const founders = [
     name: "Suneet Maharana",
     title: "Co-founder",
     description: "Senior Undergrad, IIT Kanpur. BCG Summer Intern. Founder & President - Chem Club, IITK. COO, Sangeet Tarang NGO Researcher with 2 publications",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+    avatar: "/founders/suneet.webp"
   },
   {
     name: "Chaitanya Goel",
@@ -24,7 +24,7 @@ const founders = [
     name: "Aditya Mishra",
     title: "Co-founder",
     description: "Senior Undergrad, IIT Kanpur. ARF Summer Intern. Saltmine Intern.", 
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
+    avatar: "/founders/suneet.webp"
   }
 ];
 
