@@ -3,27 +3,27 @@ import { Linkedin, Twitter } from "lucide-react";
 
 const founders = [
   {
-    name: "Arjun Patel",
-    title: "Co-founder & CEO",
-    description: "Former AI Research at Google. MS Computer Science IIT Delhi. 8 years in agricultural technology.",
+    name: "Suneet Maharana",
+    title: "Co-founder",
+    description: "Senior Undergrad, IIT Kanpur. BCG Summer Intern. Founder & President - Chem Club, IITK. COO, Sangeet Tarang NGO Researcher with 2 publications",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
   },
   {
-    name: "Dr. Priya Desai",
-    title: "Co-founder & CTO",
-    description: "PhD Agricultural Sciences IARI. Former Lead Scientist at ICRISAT. 12 years in crop research and AI applications.",
+    name: "Chaitanya Goel",
+    title: "Co-founder",
+    description: "Junior Undergrad, IIT Kanpur. Incoming Accenture Intern. Co-Founder Kaushal Up Foundation NGO National Winner Smart India Hackathon",
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face"
   },
   {
-    name: "Vikram Singh",
-    title: "Head of Operations",
-    description: "MBA IIMA. Former McKinsey consultant. Expertise in rural market penetration and farmer engagement strategies.",
+    name: "Vasudharaje Srivastava",
+    title: "Co-founder",
+    description: "Senior Undergrad, IIT Kanpur. American Express Intern. Econometrics & Public Policy Researcher",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
   },
   {
-    name: "Vikram Singh",
-    title: "Head of Operations",
-    description: "MBA IIMA. Former McKinsey consultant. Expertise in rural market penetration and farmer engagement strategies.",
+    name: "Aditya Mishra",
+    title: "Co-founder",
+    description: "Senior Undergrad, IIT Kanpur. ARF Summer Intern. Saltmine Intern.", 
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
   }
 ];
