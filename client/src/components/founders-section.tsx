@@ -40,25 +40,25 @@ export default function FoundersSection() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {founders.map((founder, index) => (
               <Card key={index} className="shadow-sm" data-testid={`founder-${index}`}>
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-6 text-center">
                   <img 
                     src={founder.avatar} 
                     alt={`${founder.name} portrait`}
-                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" 
+                    className="w-20 h-20 rounded-full mx-auto mb-3 object-cover" 
                   />
-                  <h3 className="text-xl font-bold text-foreground mb-2">{founder.name}</h3>
-                  <p className="text-muted-foreground mb-3">{founder.title}</p>
-                  <p className="text-sm text-muted-foreground mb-4">{founder.description}</p>
-                  <div className="flex justify-center space-x-3">
+                  <h3 className="text-xl font-bold text-foreground mb-1">{founder.name}</h3>
+                  <p className="text-muted-foreground mb-2">{founder.title}</p>
+                  <p className="text-sm text-muted-foreground mb-3">{founder.description}</p>
+                  <div className="flex justify-center space-x-2">
                     <a 
                       href="#" 
                       className="text-muted-foreground hover:text-primary transition-colors"
                       data-testid={`founder-linkedin-${index}`}
                     >
-                      <Linkedin className="h-5 w-5" />
+                      <Linkedin className="h-4 w-4" />
                     </a>
                     <a 
                       href="#" 
