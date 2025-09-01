@@ -58,7 +58,7 @@ export default function ChatInterface() {
   useEffect(() => {
     if (messages.length === 0) {
       setTimeout(() => {
-        sendMessageMutation.mutate("नमस्ते! मैं मृत्तिका हूँ। मैं आपकी खेती से जुड़ी समस्याओं में मदद कर सकता हूँ। आप कौन सी फसल उगाते हैं?");
+        sendMessageMutation.mutate("इस मौसम में कीटों से बचाव के लिए क्या करना चाहिए?");
       }, 1000);
     }
   }, []);
