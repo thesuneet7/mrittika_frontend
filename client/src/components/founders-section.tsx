@@ -24,7 +24,7 @@ const founders = [
     name: "Aditya Mishra",
     title: "Co-founder",
     description: "Senior Undergrad, IIT Kanpur. ARF Summer Intern. Saltmine Intern.", 
-    avatar: "/founders/suneet.webp"
+    avatar: "/founders/aditya.webp"
   }
 ];
 
