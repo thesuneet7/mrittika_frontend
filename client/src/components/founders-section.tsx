@@ -19,6 +19,12 @@ const founders = [
     title: "Head of Operations",
     description: "MBA IIMA. Former McKinsey consultant. Expertise in rural market penetration and farmer engagement strategies.",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
+  },
+  {
+    name: "Vikram Singh",
+    title: "Head of Operations",
+    description: "MBA IIMA. Former McKinsey consultant. Expertise in rural market penetration and farmer engagement strategies.",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
   }
 ];
 
