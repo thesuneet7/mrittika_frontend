@@ -12,7 +12,7 @@ const founders = [
     name: "Chaitanya Goel",
     title: "Co-founder",
     description: "Junior Undergrad, IIT Kanpur. Incoming Accenture Intern. Co-Founder Kaushal Up Foundation NGO National Winner Smart India Hackathon",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face"
+    avatar: "/founders/chaitanya.webp"
   },
   {
     name: "Vasudharaje Srivastava",
