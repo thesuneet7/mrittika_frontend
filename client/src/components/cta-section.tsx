@@ -25,7 +25,7 @@ export default function CTASection() {
                 data-testid="button-cta-start-chat"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
-                Start Free Chat
+                Try Mrittika Now
               </Button>
               <Button
                 variant="outline"
