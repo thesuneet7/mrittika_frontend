@@ -73,14 +73,27 @@ export default function FoundersSection() {
             ))}
           </div>
 
-          <Card className="shadow-sm">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                To empower small and marginal farmers through simple, inclusive SMS/Telegram/Whatsapp/App solutions that deliver timely information on subsidies, insurance, and best practices, reducing crop losses and improving livelihoods.
-              </p>
-            </CardContent>
-          </Card>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="shadow-sm">
+              <CardContent className="p-8 text-center">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  We believe every farmer deserves access to expert agricultural knowledge. By combining cutting-edge AI with deep agricultural expertise, 
+                  we're democratizing farming wisdom to help increase yields, reduce costs, and build sustainable agricultural practices across India.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="shadow-sm">
+              <CardContent className="p-8 text-center">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  To become India's most trusted AI agricultural advisor, empowering every farmer with instant access to personalized, 
+                  science-backed farming solutions that transform agriculture into a profitable and sustainable livelihood.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
