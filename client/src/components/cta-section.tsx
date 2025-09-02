@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone } from "lucide-react";
+import { Link } from "wouter";
 
 export default function CTASection() {
   const scrollToChat = () => {
@@ -19,14 +20,15 @@ export default function CTASection() {
               Join thousands of farmers already using Mrittika to increase their yields and profits
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                onClick={scrollToChat}
-                className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary/20 transition-colors font-semibold text-lg"
-                data-testid="button-cta-start-chat"
-              >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Try Mrittika Now
-              </Button>
+             <Link href="/chat">  
+                <Button
+                  className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary/20 transition-colors font-semibold text-lg"
+                  data-testid="button-cta-start-chat"
+                >
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Try Mrittika Now
+                </Button>
+              </Link>
               <Button
                 variant="outline"
                 className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary/20 transition-colors font-semibold text-lg"

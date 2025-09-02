@@ -149,12 +149,12 @@ export default function ChatInterface() {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="अपना सवाल यहाँ लिखें... (Type your question here...)"
             className="flex-1"
-            disabled={sendMessageMutation.isPending}
+            disabled={true}
             data-testid="input-chat-message"
           />
           <Button
             type="submit"
-            disabled={!message.trim() || sendMessageMutation.isPending}
+            disabled={true}
             className="bg-primary text-primary-foreground hover:bg-primary/90"
             data-testid="button-send-message"
           >

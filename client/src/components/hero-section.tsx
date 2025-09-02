@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Play } from "lucide-react";
 import ChatInterface from "./chat-interface";
+import { Link } from "wouter";
 
 export default function HeroSection() {
   const scrollToChat = () => {
@@ -22,14 +23,15 @@ export default function HeroSection() {
               Get instant, hyperlocal agricultural advice in your language. Trained specifically for Indian farming conditions and practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                onClick={scrollToChat}
-                className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors font-semibold text-lg"
-                data-testid="button-start-chatting"
-              >
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Start Chatting
-              </Button>
+            <Link href="/chat">  
+                <Button 
+                  className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors font-semibold text-lg"
+                  data-testid="button-start-chatting"
+                >
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Start Chatting
+                </Button>
+              </Link>  
               <Button 
                 variant="outline"
                 className="border border-border text-foreground px-8 py-3 rounded-lg hover:bg-secondary transition-colors font-semibold text-lg"
