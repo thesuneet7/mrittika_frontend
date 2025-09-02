@@ -13,9 +13,9 @@ export default function CTASection() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="gradient-bg rounded-3xl p-12 text-white">
+          <div className="gradient-bg rounded-3xl p-12 text-black">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Farming?</h2>
-            <p className="text-xl mb-8 text-white/90">
+            <p className="text-xl mb-8 text-black/90">
               Join thousands of farmers already using Mrittika to increase their yields and profits
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

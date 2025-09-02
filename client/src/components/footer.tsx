@@ -95,15 +95,15 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li className="flex items-center text-muted-foreground">
                   <Mail className="mr-2 h-4 w-4" />
-                  <span>hello@mrittika.ai</span>
+                  <span>info@mrittika.ai</span>
                 </li>
                 <li className="flex items-center text-muted-foreground">
                   <Phone className="mr-2 h-4 w-4" />
-                  <span>+91 80-4567-8900</span>
+                  <span>+91 7205429529</span>
                 </li>
                 <li className="flex items-center text-muted-foreground">
                   <MapPin className="mr-2 h-4 w-4" />
-                  <span>Bangalore, India</span>
+                  <span>Kanpur, India</span>
                 </li>
               </ul>
             </div>
@@ -111,7 +111,7 @@ export default function Footer() {
 
           <div className="border-t border-border pt-8 mt-8 text-center">
             <p className="text-muted-foreground">
-              © 2024 Mrittika AI. All rights reserved. Made with ❤️ for Indian farmers.
+              © 2025 Mrittika AI. All rights reserved. Made with ❤️ for Indian farmers.
             </p>
           </div>
         </div>

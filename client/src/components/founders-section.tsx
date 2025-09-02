@@ -77,8 +77,7 @@ export default function FoundersSection() {
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                We believe every farmer deserves access to expert agricultural knowledge. By combining cutting-edge AI with deep agricultural expertise, 
-                we're democratizing farming wisdom to help increase yields, reduce costs, and build sustainable agricultural practices across India.
+                To empower small and marginal farmers through simple, inclusive SMS/Telegram/Whatsapp/App solutions that deliver timely information on subsidies, insurance, and best practices, reducing crop losses and improving livelihoods.
               </p>
             </CardContent>
           </Card>
