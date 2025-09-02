@@ -21,7 +21,7 @@ export default function CTASection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 onClick={scrollToChat}
-                className="bg-white text-primary px-8 py-4 rounded-lg hover:bg-white/90 transition-colors font-semibold text-lg"
+                className="bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary/90 transition-colors font-semibold text-lg"
                 data-testid="button-cta-start-chat"
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
